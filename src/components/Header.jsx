@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-cream/85 backdrop-blur-md border-b border-golden/25 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-golden/30 shadow-sm">
       <div className="max-w-7xl mx-auto px-6">
         <nav className="flex justify-end items-center py-4">
           <ul className="flex gap-8 list-none">

@@ -1,6 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #faf6f0;
+  --color-deep-forest: #1e3a2f;
+  --color-golden: #c49a6c;
+  --color-clay: #9b6b5c;
+  
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: Inter, system-ui, sans-serif;
+}
 
 /* You can put custom CSS below here if needed */
 *{

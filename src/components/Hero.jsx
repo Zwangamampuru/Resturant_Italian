@@ -1,7 +1,16 @@
+// Import your hero image from assets here
+import heroBg from '../assets/ItalianFood.jpg';
+
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center pt-32 pb-20 px-6 bg-[linear-gradient(rgba(30,58,47,0.65),rgba(30,58,47,0.75)),url('/Image Folder/ItalianFood.jpg')] bg-cover bg-center bg-fixed mb-20">
-      <div className="max-w-3xl text-white">
+    <section 
+      className="relative min-h-screen flex flex-col justify-center items-center text-center pt-32 pb-20 px-6 bg-cover bg-center bg-fixed mb-20"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
+      {/* Dark overlay so text is readable */}
+      <div className="absolute inset-0 bg-deep-forest/70"></div>
+      
+      <div className="relative z-10 max-w-3xl text-white">
         <h1 className="font-serif text-5xl md:text-7xl leading-tight mb-6 drop-shadow-lg">
           Brewhause Restaurant
         </h1>
@@ -18,7 +27,7 @@ export default function Hero() {
           We release tables 30 days in advance. For parties of 6 or more, 
           please call us directly — we'll take care of you.
         </p>
-        <button className="bg-golden text-white font-semibold py-3 px-10 rounded-full uppercase tracking-wider hover:bg-yellow-700 transition-all hover:-translate-y-1 shadow-lg">
+        <button className="bg-golden text-white font-semibold py-3 px-10 rounded-full uppercase tracking-wider hover:bg-yellow-600 transition-all hover:-translate-y-1 shadow-lg">
           Book your table
         </button>
         <p className="mt-5 text-sm opacity-80">or call (555) 347‑2634 · daily from 10am</p>
